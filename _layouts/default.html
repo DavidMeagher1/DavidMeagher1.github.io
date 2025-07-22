@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-<body class="dark-theme">
+<body>
 
   {%- include header.html -%}
 
@@ -16,6 +16,86 @@
   {%- include footer.html -%}
 
   <style>
+    /* Header layout styles */
+    .site-header .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Theme toggle button styles */
+    .theme-toggle {
+      background: none;
+      border: 2px solid var(--border-color, #ddd);
+      border-radius: 20px;
+      padding: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      width: 50px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      border-color: var(--link-color, #2457c5);
+    }
+
+    .dark-theme .theme-toggle {
+      border-color: #404040;
+    }
+
+    .dark-theme .theme-toggle:hover {
+      border-color: #4a9eff;
+    }
+
+    /* Icon visibility based on theme */
+    .sun-icon, .moon-icon {
+      transition: opacity 0.3s ease;
+      position: absolute;
+    }
+
+    /* Default (light mode) - show sun, hide moon */
+    .sun-icon {
+      opacity: 0;
+    }
+
+    .moon-icon {
+      opacity: 1;
+    }
+
+    /* Dark mode - show moon, hide sun */
+    .dark-theme .sun-icon {
+      opacity: 1;
+    }
+
+    .dark-theme .moon-icon {
+      opacity: 0;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .header-right {
+        gap: 0.5rem;
+      }
+      
+      .theme-toggle {
+        width: 40px;
+        height: 28px;
+        font-size: 0.9rem;
+      }
+    }
+
     /* Dark theme inline styles - fallback if main.scss doesn't load */
     .dark-theme {
       background-color: #1a1a1a !important;
@@ -55,6 +135,36 @@
       color: #b0b0b0 !important;
     }
   </style>
+
+  <script>
+    // Dark mode toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const body = document.body;
+      
+      // Check for saved theme preference or default to dark mode
+      const currentTheme = localStorage.getItem('theme') || 'dark';
+      
+      // Apply the current theme
+      if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.remove('dark-theme');
+      }
+      
+      // Toggle theme when button is clicked
+      themeToggle.addEventListener('click', function() {
+        body.classList.toggle('dark-theme');
+        
+        // Save the preference
+        if (body.classList.contains('dark-theme')) {
+          localStorage.setItem('theme', 'dark');
+        } else {
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    });
+  </script>
 
 </body>
 

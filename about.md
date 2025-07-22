@@ -16,8 +16,7 @@ This blog is a place where I explore topics that fascinate me, share lessons lea
 
 Feel free to reach out if you'd like to connect or have questions about any of my posts.
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [meagherjdavid@gmail.com](mailto:meagherjdavid@gmail.com)
 - GitHub: [@DavidMeagher1](https://github.com/DavidMeagher1)
-- Twitter: [@your_twitter_username](https://twitter.com/your_twitter_username)
 
 Thanks for stopping by!
