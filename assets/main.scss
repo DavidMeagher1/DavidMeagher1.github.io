@@ -1,0 +1,174 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+/* Dark theme overrides */
+:root {
+  --background-color: #1a1a1a;
+  --surface-color: #2d2d2d;
+  --text-color: #e0e0e0;
+  --text-color-light: #b0b0b0;
+  --link-color: #4a9eff;
+  --link-hover-color: #66b3ff;
+  --border-color: #404040;
+  --code-background: #333333;
+  --header-background: #0f0f0f;
+}
+
+/* Apply dark theme */
+body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Header styling */
+.site-header {
+  background-color: var(--header-background) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.site-title, .site-title:visited {
+  color: var(--text-color) !important;
+}
+
+.site-nav .page-link {
+  color: var(--text-color-light) !important;
+}
+
+.site-nav .page-link:hover {
+  color: var(--text-color) !important;
+}
+
+/* Main content */
+.page-content {
+  background-color: var(--background-color);
+}
+
+.wrapper {
+  background-color: var(--background-color);
+}
+
+/* Post content */
+.post-content, .page-content {
+  color: var(--text-color) !important;
+}
+
+.post-title, .page-heading {
+  color: var(--text-color) !important;
+}
+
+.post-meta {
+  color: var(--text-color-light) !important;
+}
+
+/* Links */
+a {
+  color: var(--link-color) !important;
+}
+
+a:hover {
+  color: var(--link-hover-color) !important;
+}
+
+a:visited {
+  color: var(--link-color) !important;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: var(--code-background) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.highlight {
+  background-color: var(--code-background) !important;
+}
+
+/* Tables */
+table {
+  background-color: var(--surface-color) !important;
+  color: var(--text-color) !important;
+}
+
+th, td {
+  border: 1px solid var(--border-color) !important;
+}
+
+th {
+  background-color: var(--header-background) !important;
+}
+
+/* Blockquotes */
+blockquote {
+  color: var(--text-color-light) !important;
+  border-left: 4px solid var(--border-color) !important;
+  background-color: var(--surface-color) !important;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--header-background) !important;
+  border-top: 1px solid var(--border-color) !important;
+  color: var(--text-color-light) !important;
+}
+
+.footer-heading {
+  color: var(--text-color) !important;
+}
+
+.contact-list a, .social-media-list a {
+  color: var(--link-color) !important;
+}
+
+.contact-list a:hover, .social-media-list a:hover {
+  color: var(--link-hover-color) !important;
+}
+
+/* Home page post list */
+.post-list-heading {
+  color: var(--text-color) !important;
+}
+
+.post-list .post-meta {
+  color: var(--text-color-light) !important;
+}
+
+.post-list h3 a {
+  color: var(--text-color) !important;
+}
+
+.post-list h3 a:hover {
+  color: var(--link-hover-color) !important;
+}
+
+/* Pagination */
+.pagination {
+  color: var(--text-color-light) !important;
+}
+
+.pagination a {
+  color: var(--link-color) !important;
+}
+
+.pagination a:hover {
+  color: var(--link-hover-color) !important;
+}
+
+/* Mobile menu */
+.site-nav .nav-trigger:checked ~ .trigger {
+  background-color: var(--surface-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color) !important;
+}
+
+/* HR elements */
+hr {
+  border-color: var(--border-color) !important;
+}
