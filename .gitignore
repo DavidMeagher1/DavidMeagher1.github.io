@@ -33,3 +33,6 @@ node_modules/
 
 # Ignore draft posts
 _drafts/
+
+# Ignore planned posts (private content planning)
+_planned/

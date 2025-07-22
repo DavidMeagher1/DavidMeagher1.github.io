@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to My Blog!"
-date:   2025-07-21 10:00:00 -0000
+date:   2025-07-22 08:51:00 -0000
 categories: personal introduction
 tags: [welcome, blogging, first-post]
 ---
@@ -12,13 +12,7 @@ Hello and welcome! This is my first post on my new blog, and I'm excited to shar
 
 ## What to Expect
 
-I plan to write about topics that interest me, including:
-
-- Technology and programming
-- Personal experiences and lessons learned
-- Thoughts on current events and trends
-- Book reviews and recommendations
-- Travel experiences
+I program a lot, currently I'm working in [Godot](https://www.godotengine.org), but I also program in [Zig](https://www.ziglang.org) quite regularly. I'll pretty much be posting about what interests me in programming.
 
 ## Why Start a Blog?
 
@@ -36,5 +30,3 @@ I hope to post regularly and create content that's both interesting and valuable
 Thanks for reading, and I look forward to sharing more with you soon.
 
 ---
-
-*What are your thoughts on blogging? Have you started a blog yourself? I'd love to hear about your experiences in the comments below.*
